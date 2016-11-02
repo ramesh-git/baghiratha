@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-var masterServiceBaseURL = "/tdwsp/mastersServices/";
+var masterServiceBaseURL = "http://missionbhagiratha.telangana.gov.in/tdwsp/mastersServices/";
 $(document).ready(function () {
  console.log("in js");
 
