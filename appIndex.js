@@ -4,16 +4,14 @@
  * and open the template in the editor.
  */
 
-var masterServiceBaseURL = "http://missionbhagiratha.telangana.gov.in/tdwsp/mastersServices/";
+var masterServiceBaseURL = "/tdwsp/mastersServices/";
 $(document).ready(function () {
- console.log("in js");
-
  $('#submit').click(function (event) {
 	
-console.log("in submit");
+$("#log").append("<br/>in submit");
     var strVal = $('#password').val();
     var strMD5 = $.md5(strVal);
-	console.log(strMD5)
+	$("#log").append(strMD5+"<br/>")
     $.ajax({
        
         type: "GET",
@@ -22,21 +20,20 @@ console.log("in submit");
         {
 //            data = JSON.parse(data);
 		
-                console.log(data);
+                $("#log").append(data+"<br/>");
                 
-            if (data.length > 0) {
-//                                   alert('login success');
-//                sessionStorage.setItem("userData", JSON.stringify(data));
-                window.location = "/tdwspweb/Login.html";
+            if (data == "success") {
+                $("#log").append('login success'+"<br/>");
             }
             else{
-                alert('fail');
+                $("#log").append("Invalid combination"+"<br/>");
             }
 
         },
         error: function (x, e)
         {
-            alert(x.readyState + " " + x.status + " " + e.msg);
+            $("#log").append(x.readyState + " " + x.status + " " + e.msg+"<br/>");
+            
         }
 
 
