@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 $("#log").append("in js file");
-var masterServiceBaseURL = "/tdwsp/mastersServices/";
+var masterServiceBaseURL = "http://missionbhagiratha.telangana.gov.in/tdwsp/mastersServices/";
 $(document).ready(function () {
  $('#submit').click(function (event) {
 	
