@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+$("#log").append("in js file");
 var masterServiceBaseURL = "/tdwsp/mastersServices/";
 $(document).ready(function () {
  $('#submit').click(function (event) {
