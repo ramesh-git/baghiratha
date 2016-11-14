@@ -27,7 +27,7 @@
   <Placemark>
 	<name>wa-ba-2</name>
 	<description>Unknown Line Type</description>
-	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<Style><LineStyle><color>ffff0000</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#Line_Features">
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">-1</SimpleData>
